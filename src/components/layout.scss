@@ -1,0 +1,29 @@
+.navbar {
+  @apply w-screen h-16 px-6 flex items-center justify-between  fixed bg-white;
+  .nav-menu {
+    @apply flex items-center;
+    .nav-item {
+      @apply mr-6;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    .nav-menu {
+      @apply flex-col absolute justify-center items-start top-16 right-0 w-screen shadow-lg bg-white p-6;
+      .nav-item {
+        @apply mr-0 mt-4;
+      }
+      button {
+        @apply mt-4;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .collapse-button {
+    @apply hidden;
+  }
+}

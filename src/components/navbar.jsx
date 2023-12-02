@@ -1,23 +1,33 @@
+/* eslint-disable no-unused-vars */
+import MenuIcon from "@mui/icons-material/Menu";
+import { useState } from "react";
+import "./layout.scss";
 export default function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
+  const toogleNavbar = () => {
+    setNavbar(!navbar);
+  };
   return (
-    <nav className="w-screen h-16 px-6 flex items-center justify-between shadow-lg fixed">
+    <nav className="navbar">
       <div>
         <img src="/pakar-web.svg" alt="logo-pakarweb" className="w-32" />
       </div>
-      <div>
-        <ul className="flex items-center">
+      <div className="flex">
+        <button className="collapse-button" onClick={toogleNavbar}>
+          <MenuIcon />
+        </button>
+        <ul className={navbar ? "hidden" : "nav-menu"}>
           <a href="/">
-            <li className="mr-6">Home</li>
+            <li className="nav-item">Home</li>
           </a>
           <a href="/about">
-            <li className="mr-6">About</li>
+            <li className="nav-item">About</li>
           </a>
           <a href="/services">
-            <li className="mr-6">Services</li>
+            <li className="nav-item">Services</li>
           </a>
-          <button className="bg-cyan-300 px-3 py-2 rounded-xl font-bold">
-            Daftar
-          </button>
+          <button className="bg-cyan-300 font-bold">Daftar</button>
         </ul>
       </div>
     </nav>
