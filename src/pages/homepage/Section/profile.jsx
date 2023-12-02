@@ -85,6 +85,60 @@ export default function ProfileSection() {
           </div>
         </div>
       </div>
+      <div className="flex items-center justify-center flex-col mt-12">
+        <h2>Our Clients</h2>
+        <div className="flex gap-9 mt-6">
+          <div className=" bg-slate-50 w-24 h-24 rounded-full p-2 flex items-center justify-center shadow-md">
+            <img
+              className="w-12 h-auto"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/97/Logo_PLN.png"
+              alt="pln"
+            />
+          </div>
+          <div className=" bg-slate-50 w-24 h-24 rounded-full p-2 flex items-center justify-center shadow-md">
+            <img
+              className="w-12 h-auto"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Pertamina_Logo.svg/1280px-Pertamina_Logo.svg.png"
+              alt="pertamina"
+            />
+          </div>
+          <div className=" bg-slate-50 w-24 h-24 rounded-full p-2 flex items-center justify-center shadow-md">
+            <img
+              className="w-12 h-auto"
+              src="https://www.telkom.co.id/minio/show/data/image_upload/page/1594108255409_compress_logo%20telkom%20indonesia.png"
+              alt="telkom"
+            />
+          </div>
+          <div className=" bg-slate-50 w-24 h-24 rounded-full p-2 flex items-center justify-center shadow-md">
+            <img
+              className="w-12 h-auto"
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Lambang_Polri.png"
+              alt="polri"
+            />
+          </div>
+          <div className=" bg-slate-50 w-24 h-24 rounded-full p-2 flex items-center justify-center shadow-md">
+            <img
+              className="w-12 h-auto"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Chevron_Logo.svg/512px-Chevron_Logo.svg.png"
+              alt="chevron"
+            />
+          </div>
+          <div className=" bg-slate-50 w-24 h-24 rounded-full p-2 flex items-center justify-center shadow-md">
+            <img
+              className="w-12 h-auto"
+              src="https://upload.wikimedia.org/wikipedia/min/6/66/PSMS.png"
+              alt="psms"
+            />
+          </div>
+          <div className=" bg-slate-50 w-24 h-24 rounded-full p-2 flex items-center justify-center shadow-md">
+            <img
+              className="w-12 h-auto"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Universal_Music_Group_logo.svg/2560px-Universal_Music_Group_logo.svg.png"
+              alt="universal music"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
