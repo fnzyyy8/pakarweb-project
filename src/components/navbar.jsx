@@ -19,15 +19,15 @@ export default function Navbar() {
         </button>
         <ul className={navbar ? "hidden" : "nav-menu"}>
           <a href="/">
-            <li className="nav-item">Home</li>
+            <li className="nav-item hover:text-slate-500">Home</li>
           </a>
           <a href="/about">
-            <li className="nav-item">About</li>
+            <li className="nav-item hover:text-slate-500">About</li>
           </a>
           <a href="/services">
-            <li className="nav-item">Services</li>
+            <li className="nav-item hover:text-slate-500">Services</li>
           </a>
-          <button className="bg-cyan-300 font-bold">Daftar</button>
+          <button className="">Daftar</button>
         </ul>
       </div>
     </nav>

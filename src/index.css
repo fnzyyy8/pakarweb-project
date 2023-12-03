@@ -7,7 +7,7 @@
     @apply text-2xl font-bold;
   }
   button {
-    @apply font-bold shadow-md px-3 py-2;
+    @apply bg-slate-50 font-bold shadow-md px-3 py-2 hover:bg-slate-100;
   }
   h2 {
     @apply text-xl font-semibold;

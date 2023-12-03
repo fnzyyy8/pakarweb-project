@@ -1,50 +1,45 @@
+import { useEffect, useState } from "react";
+import servicesDb from "../../../api/services.json";
+
 export default function ServiceSection() {
+  const [servicelist, setservicesList] = useState([]);
+
+  useEffect(() => {
+    const getServices = async () => {
+      try {
+        const data = await servicesDb;
+        setservicesList(data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    getServices();
+  }, []);
+
   return (
     <section className="mt-6">
       <h1>SERVICES</h1>
-      <div className="grid grid-cols-3 gap-6 my-6 justify-between">
-        <div className="relative rounded-md bg-slate-500 w-[360px] h-[480px] overflow-hidden">
-          <img
-            className="hidden object-cover top-0 left-0 w-full-h-full"
-            alt="cyber security"
-            src="https://plus.unsplash.com/premium_photo-1676618539987-12b7c8a8ae61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3liZXIlMjBzZWN1cml0eXxlbnwwfHwwfHx8MA%3D%3D"
-          />
-          <div className="absolute bottom-0 p-3 text-white bg-black bg-opacity-40">
-            <h2>Judul Pekerjaan</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur, exercitationem.
-            </p>
+      <div className="flex justify-between my-6">
+        {servicelist.map((service, id) => (
+          <div
+            key={id}
+            className="relative bg-slate-500 justify-center items-center overflow-hidden cursor-pointer group"
+          >
+            <div className="w-[360px] h-[480px]">
+              <img
+                className="object-cover w-full-h-full grayscale group-hover:grayscale-0 transition-all delay-100"
+                alt={service.title}
+                src={service.image}
+                style={{ aspectRatio: "9/16" }}
+              />
+            </div>
+
+            <div className="absolute bottom-0 h-48 p-3 text-white bg-black bg-opacity-40 translate-y-[70%] group-hover:translate-y-0 transition-all delay-100">
+              <h2>{service.title}</h2>
+              <p className="mt-3">{service.description}</p>
+            </div>
           </div>
-        </div>
-        <div className="relative rounded-md bg-slate-500 w-[360px] h-[480px] overflow-hidden">
-          <img
-            className="hidden object-cover top-0 left-0 w-full-h-full"
-            alt="cyber security"
-            src="https://plus.unsplash.com/premium_photo-1676618539987-12b7c8a8ae61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3liZXIlMjBzZWN1cml0eXxlbnwwfHwwfHx8MA%3D%3D"
-          />
-          <div className="absolute bottom-0 p-3 text-white bg-black bg-opacity-40">
-            <h2>Judul Pekerjaan</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur, exercitationem.
-            </p>
-          </div>
-        </div>
-        <div className="relative rounded-md bg-slate-500 w-[360px] h-[480px] overflow-hidden">
-          <img
-            className="hidden object-cover top-0 left-0 w-full-h-full"
-            alt="cyber security"
-            src="https://plus.unsplash.com/premium_photo-1676618539987-12b7c8a8ae61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3liZXIlMjBzZWN1cml0eXxlbnwwfHwwfHx8MA%3D%3D"
-          />
-          <div className="absolute bottom-0 p-3 text-white bg-black bg-opacity-40">
-            <h2>Judul Pekerjaan</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur, exercitationem.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

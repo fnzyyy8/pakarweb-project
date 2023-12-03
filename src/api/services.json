@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Cyber Security",
+    "image": "https://plus.unsplash.com/premium_photo-1676618539987-12b7c8a8ae61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y3liZXIlMjBzZWN1cml0eXxlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Keamanan terhadap website anda yang sudah ada ataupun akan di buat, paket ini untuk perusahaan yang mengutamakan keamanan dan kerahasiaan data."
+  },
+  {
+    "id": 2,
+    "title": "Dashboard",
+    "image": "https://images.unsplash.com/photo-1664575601786-b00156752b61?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Melakukan monitor terhadap bisnis akan jauh lebih mudah, dapat di sesuaikan dengan kebutuhan perusahaan."
+  },
+  {
+    "id": 3,
+    "title": "Landing page",
+    "image": "https://images.unsplash.com/photo-1526572195979-0f8a7ea44489?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Butuh tampilan yang lebih profesional ?, Professional dalam membulai bisnis cocok menggunakan paket ini, percayakan persona anda pada kami."
+  },
+  {
+    "id": 4,
+    "title": "Shopping page",
+    "image": "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHNob3BwaW5nfGVufDB8fDB8fHww",
+    "description": "Penjualan lebih luas dan aman, yakinkan website penjualan anda, sesuaikan kebutuhan anda dalam membangun toko online."
+  }
+]
