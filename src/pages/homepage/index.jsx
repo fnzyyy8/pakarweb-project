@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <main className="">
       <HeroSection />
-      <div className="px-9">
+      <div className="px-32">
         <ProfileSection />
         <ServiceSection />
       </div>

@@ -4,29 +4,22 @@ import StarIcon from "@mui/icons-material/Star";
 import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 
-import { dbClients } from "../../../config/firebase";
-import { getDocs, collection } from "firebase/firestore";
-import { useEffect, useState } from "react";
+import clientsDb from "../../../api/clients.json";
+import { useState, useEffect } from "react";
 export default function ProfileSection() {
-  const [clientList, setClientList] = useState([]);
-
-  const clientsCollectionRef = collection(dbClients, "clients");
+  const [clientList, setClients] = useState([]);
 
   useEffect(() => {
-    const getClientsList = async () => {
+    const getClientList = async () => {
       try {
-        const data = await getDocs(clientsCollectionRef);
-        const filterData = data.docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }));
-        setClientList(filterData);
+        const data = await clientsDb;
+        setClients(data);
       } catch (err) {
         console.error(err);
       }
     };
-    getClientsList();
-  }, [clientsCollectionRef]);
+    getClientList();
+  }, []);
 
   return (
     <section className="mt-6">
@@ -119,7 +112,7 @@ export default function ProfileSection() {
             >
               <img
                 className="w-12 h-auto"
-                src={client.photo}
+                src={client.picture}
                 alt={client.title}
               />
             </div>

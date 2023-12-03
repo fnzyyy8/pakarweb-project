@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "pln",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/9/97/Logo_PLN.png"
+  },
+  {
+    "id": 2,
+    "title": "pertamina gas",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Logo_Pertamina_Gas_Negara.svg/2560px-Logo_Pertamina_Gas_Negara.svg.png"
+  },
+  {
+    "id": 3,
+    "title": "telkom indonesia",
+    "picture": "https://upload.wikimedia.org/wikipedia/id/thumb/c/c4/Telkom_Indonesia_2013.svg/1200px-Telkom_Indonesia_2013.svg.png"
+  },
+  {
+    "id": 4,
+    "title": "psms",
+    "picture": "https://upload.wikimedia.org/wikipedia/min/6/66/PSMS.png"
+  },
+  {
+    "id": 5,
+    "title": "universal music",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Universal_Music_Group_logo.svg/2560px-Universal_Music_Group_logo.svg.png"
+  },
+  {
+    "id": 6,
+    "title": "Microsoft Corporation",
+    "picture": "https://w7.pngwing.com/pngs/124/600/png-transparent-microsoft-logo-microsoft.png"
+  },
+  {
+    "id": 7,
+    "title": "Perbakin",
+    "picture": "https://seeklogo.com/images/P/perbakin-logo-6BABCFA043-seeklogo.com.png"
+  }
+]
