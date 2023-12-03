@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className=" flex  h-[380px] items-start justify-center flex-col text-start p-6 max-w-[680px] bg-black bg-opacity-60">
           <div className="text-white">
             <h1>Kami Hadir Untuk Anda</h1>
-            <p className="mt-3">
+            <p className="mt-2 leading-loose">
               Kami berkomitmen menciptakan website yang sesuai dengan profile
               perusahaan anda. Bagi kami kepuasan client adalah hal penting.
             </p>

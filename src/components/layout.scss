@@ -1,5 +1,5 @@
 .navbar {
-  @apply w-screen h-16 px-6 flex items-center justify-between  fixed bg-white;
+  @apply w-screen h-16 px-8 flex items-center justify-between  fixed bg-slate-100;
   .nav-menu {
     @apply flex items-center;
     .nav-item {
@@ -11,7 +11,7 @@
 @media screen and (max-width: 768px) {
   .navbar {
     .nav-menu {
-      @apply flex-col absolute justify-center items-start top-16 right-0 w-screen shadow-lg bg-white p-6;
+      @apply flex-col absolute justify-center items-start top-16 right-0 w-screen shadow-lg bg-slate-100 p-6;
       .nav-item {
         @apply mr-0 mt-4;
       }

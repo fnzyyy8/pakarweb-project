@@ -49,8 +49,8 @@ export default function ProfileSection() {
             </button>
           </div>
         </div>
-        <div className="gap-4 grid grid-cols-4 mt-24">
-          <div className="p-6 bg-slate-50 mr-2 flex justify-between">
+        <div className="gap-4 grid grid-cols-4 my-12">
+          <div className="px-6 py-10 bg-slate-50 mr-2 flex justify-between shadow-md">
             <div className="pr-6 flex items-center">
               <HeadsetMicIcon fontSize="large" />
             </div>
@@ -62,7 +62,7 @@ export default function ProfileSection() {
               </p>
             </div>
           </div>
-          <div className="p-6 bg-slate-50 mr-2 flex justify-between">
+          <div className="px-6 py-10 bg-slate-50 mr-2 flex justify-between shadow-md">
             <div className="pr-6 flex items-center">
               <StarIcon fontSize="large" />
             </div>
@@ -74,7 +74,7 @@ export default function ProfileSection() {
               </p>
             </div>
           </div>
-          <div className="p-6 bg-slate-50 mr-2 flex justify-between">
+          <div className="px-6 py-10 bg-slate-50 mr-2 flex justify-between shadow-md">
             <div className="pr-6 flex items-center">
               <ElectricBoltIcon fontSize="large" />
             </div>
@@ -87,7 +87,7 @@ export default function ProfileSection() {
               </p>
             </div>
           </div>
-          <div className="p-6 bg-slate-50 mr-2 flex justify-between">
+          <div className="px-6 py-10 bg-slate-50 mr-2 flex justify-between shadow-md">
             <div className="pr-6 flex items-center">
               <AttachMoneyIcon fontSize="large" />
             </div>
@@ -103,7 +103,7 @@ export default function ProfileSection() {
       </div>
       <div className="flex items-center justify-center flex-col mt-24 mb-24">
         <h2>Our Clients</h2>
-        <div className="flex gap-9 mt-8">
+        <div className="flex gap-9 mt-6">
           {clientList.map((client) => (
             <div
               key={client.id}
